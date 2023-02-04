@@ -1,17 +1,17 @@
-﻿# An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale
+﻿# BERT-Pre-training of Deep Bidirectional Transformers for Language Understanding
  
-### [Original Paper](https://arxiv.org/abs/2010.11929)
+### [Original Paper](https://arxiv.org/pdf/1810.04805v2.pdf)
 
-- <ins>**Authors,Venue & Year**</ins>: **Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn et. , ICLR, 2021**
+- <ins>Authors,Venue & Year</ins>: Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova, NAACL, 2019
 
 ## Summary
 
-- In vision, attention is either applied in conjunction with convolutional networks, or used to replace certain components of convolutional networks while keeping their overall structure in place.
-- This paper by Dosovitskiy et al. from Google Brain in ICLR 2021 shows that this **reliance on CNNs is not necessary and a pure transformer applied directly to sequences of image patches can perform very well on image classification tasks**.
-- Inspired by the Transformer scaling successes in NLP, we experiment with applying a standard Transformer directly to images, with the fewest possible modifications. To do so, they split an image into patches and provide the sequence of linear embeddings of these patches as an input to a Transformer. 
-- Image patches are treated the same way as tokens (words) in an NLP application. They train the model on image classification in supervised fashion (as shown in the figure below).
-- They introduce three ViT configurations (Base, Large, and Huge) in the form of two models: ViT-H/14 and ViT-L/16 (where the notation used is ViT-C/N, C is used to indicate the model size and N is the input patch size; for instance, ViT-L/16 means the “Large” variant with 16×16 input patch size).
-- When pre-trained on large amounts of data and transferred to multiple mid-sized or small image recognition benchmarks (ImageNet, CIFAR-100, VTAB, etc.), the proposed Vision Transformer (ViT) attains excellent results compared to state-of-the-art convolutional networks while requiring substantially fewer computational resources to train.
-
-
-
+- This paper by Devlin et al. from Google in ACL 2019 proposed BERT (Bidirectional Encoder Representations from Transformers), a **Transformer-based language representation model which proposed pre-training bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers**. BERT is pre-trained using two unsupervised tasks: (i) **masked language modeling (MLM)** and, (ii) **next sentence prediction (NSP)**.
+   - MLM is often referred to as a Cloze task in the literature (Taylor, 1953). In this case, **the final hidden vectors corresponding to the mask tokens are fed into an output softmax over the vocabulary**, as in a standard LM.
+   - NSP is needed because many important downstream tasks such as Question Answering (QA) and Natural Language Inference (NLI) are based on understanding the relationship between two sentences, which is not directly captured by language modeling. In order to train a model that understands sentence relationships, they **pre-train for a binarized next sentence prediction task that can be trivially generated from any monolingual corpus**.
+   
+- Fine-tuning for the task at hand involves **using an additional output layer**, to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications.
+- BERT comes in two flavors: (i) **BERT Base**: 12 layers (transformer blocks), 12 attention heads, and 110 million parameters; (ii) **BERT Large**: 24 layers (transformer blocks), 16 attention heads, and 340 million parameters.
+- BERT consumes a max of 512 input tokens. At its output, word embeddings for BERT (what is called BERT-base) have 768 dimensions.
+- BERT obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the **GLUE score to 80.5% **(7.7% point absolute improvement), **MultiNLI accuracy to 86.7%** (4.6% absolute improvement), **SQuAD v1.1 question answering Test F1 to 93.2** (1.5 point absolute improvement) and **SQuAD v2.0 Test F1 to 83.1** (5.1 point absolute improvement).
+- BERT demonstrated that unsupervised pretraining is an integral part of many language understanding systems and enables even low-resource tasks to benefit from them.
