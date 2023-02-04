@@ -13,8 +13,8 @@
 - Fine-tuning for the task at hand involves **using an additional output layer**, to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications.
 
 - BERT comes in two flavors: 
-   - (i) **BERT Base**: 12 layers (transformer blocks), 12 attention heads, and 110 million parameters
-   - (ii) **BERT Large**: 24 layers (transformer blocks), 16 attention heads, and 340 million parameters
+   - **BERT Base**: 12 layers (transformer blocks), 12 attention heads, and 110 million parameters
+   - **BERT Large**: 24 layers (transformer blocks), 16 attention heads, and 340 million parameters
    
 - BERT consumes a max of 512 input tokens. At its output, word embeddings for BERT (what is called BERT-base) have 768 dimensions.
 
