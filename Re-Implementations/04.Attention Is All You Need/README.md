@@ -1,9 +1,4 @@
 # Attention is all you Need : Machine translation 
-<p align="center">
-  <img src="https://github.com/AdiNarendra98/Papers-on-Language/blob/main/Re-Implementations/04.Attention%20Is%20All%20You%20Need/gotta_torch.png" alt="drawing" width="300"/>
-</p>
-
-[![Build Status](https://github.com/Andrey885/Machine_translation_PyTorch/blob/master/.github/workflows/build-passing.svg)](https://github.com/Andrey885/Machine_translation_PyTorch/actions)
 
 ## Introduction
 The attention mechanism is a popular easy-to-implement model architecture
@@ -16,8 +11,10 @@ you need other languages support, thanks to SpaCy team there are
  Pretrained German-English model is already available after setup.
 
 <p align="center">
-  <img src="https://github.com/AdiNarendra98/Papers-on-Language/blob/main/Re-Implementations/04.Attention%20Is%20All%20You%20Need/Transformer%20Archi.png" alt="drawing" width="300"/>
-<b>Tranformer Architecture from the Paper</b> </p>
+  <img src="https://github.com/AdiNarendra98/Papers-on-Language/blob/main/Re-Implementations/04.Attention%20Is%20All%20You%20Need/Transformer%20Archi.png" alt="drawing" width="300"/><br>
+<b>Tranformer Architecture from the Paper</b><br>
+</p>
+
 
 
 ## Dataset
