@@ -3,7 +3,7 @@
  
 ### [Original Paper](https://arxiv.org/pdf/1706.03762v5.pdf)
 
-- <ins>***Authors,Venue & Year***</ins>: **Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit et. , NeurIPS, 2017**
+- <ins>***Authors,Venue & Year***</ins>: **Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit et. NeurIPS, 2017**
 
 ## Summary
 
