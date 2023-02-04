@@ -2,7 +2,7 @@
  
 ### [Original Paper](https://arxiv.org/abs/2010.11929)
 
-- <ins>**Authors,Venue & Year**</ins>: **Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn et. , ICLR, 2021**
+- <ins>***Authors,Venue & Year***</ins>: **Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn et. , ICLR, 2021**
 
 ## Summary
 
