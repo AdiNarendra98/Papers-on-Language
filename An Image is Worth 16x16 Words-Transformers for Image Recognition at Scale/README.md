@@ -1,8 +1,7 @@
 ﻿# ViT - Vision Transformer
 
-This is an implementation of ViT - Vision Transformer by Google Research Team through the paper [**"An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale"**](https://arxiv.org/abs/2010.11929)
+This is an implementation of ViT - Vision Transformer by Google Research Team through the paper [**"An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale"**](https://arxiv.org/abs/2010.11929) on CIFAR-100 dataset
 
-**Please install PyTorch with CUDA support following this [link](https://pytorch.org/get-started/locally/)**
 
 ## ViT Architecture
 ![Architecture of Vision Transformer](https://github.com/AdiNarendra98/Papers-on-Language/blob/main/An%20Image%20is%20Worth%2016x16%20Words-Transformers%20for%20Image%20Recognition%20at%20Scale/ViT.png)
@@ -35,4 +34,3 @@ Currently, you can only train this model on CIFAR-100 with the following command
 `> pip3 install -r requirements.txt`\
 `> python3 train.py`
 
-***Suppport for other dataset and custom datasets will be updated later***
