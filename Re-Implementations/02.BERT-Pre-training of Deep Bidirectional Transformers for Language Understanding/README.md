@@ -1,62 +1,58 @@
-## Fine Tuning BERT for Disaster Tweets Classification
+# Twitter Sentiment Analysis with Deep Learning using BERT and Hugging Face 
 
-### Background and Motivation
+## Blog
 
-Text classification is a technique for putting text into different categories and has a wide range of applications: email providers use text classification to detect to spam emails, marketing agencies use it for sentiment analysis of customer reviews, and moderators of discussion forums use it to detect inappropriate comments.
+[Medium Blog](https://baotramduong.medium.com/twitter-sentiment-analysis-with-deep-learning-using-bert-and-hugging-face-830005bcdbbf)
 
-In the past, data scientists used methods such as [tf-idf](https://en.wikipedia.org/wiki/Tf%E2%80%93idf), [word2vec](https://en.wikipedia.org/wiki/Word2vec), or [bag-of-words (BOW)](https://en.wikipedia.org/wiki/Bag-of-words_model) to generate features for training classification models. While these techniques have been very successful in many NLP tasks, they don't always capture the meanings of words accurately when they appear in different contexts. Recently, we see increasing interest in using [Bidirectional Encoder Representations from Transformers (BERT)](https://arxiv.org/abs/1810.04805) to achieve better results in text classification tasks, due to its ability more accurately encode the meaning of words in different contexts.
+## Introduction
 
-BERT was trained on BookCorpus and English Wikipedia data, which contain 800 million words and 2,500 million words, respectively. Training BERT from scratch would be prohibitively expensive. By taking advantage of transfer learning, one can quickly fine tune BERT for another use case with a relatively small amount of training data to achieve state-of-the-art results for common NLP tasks, such as text classification and question answering. 
+Sentiment Analysis, also known as Opinion Mining and Emotion AI, is an algorithm used to determine the opinions of the masses about a specific topic. With the growth of social medias, blogs, discussion forums, online review sites, etc. major companies have come to realize that being sentiment-aware can help them gain insights into user behavior, track and manage their online presence and image and use that information to boost brand loyalties and advocacy, marketing message, product development, monitor competitive intelligence, etc. As of 2021, the world has 3.78B social media users (53.6% of the world’s population) who spend an average time of 2.5 hours per day (Chaffey, 2021).
 
-[Amazon SageMaker](https://docs.aws.amazon.com/sagemaker/index.html) is a fully managed service that provides developers and data scientists with the ability to build, train, and deploy machine learning (ML) models quickly. Amazon SageMaker removes the heavy lifting from each step of the machine learning process to make it easier to develop high-quality models. The [SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable/) provides open source APIs and containers that make it easy to train and deploy models in Amazon SageMaker with several different machine learning and deep learning frameworks.
+In this project we will build a Sentiment Classifier using BERT (Bidirectional Encoders Representations from Transformers) which is both a contextual and (the first ever) bidirectional language model. BERT is an open-source NLP pre-training model developed by the Google AI Language team in 2018. It is considered the most ground-breaking development in the field of NLP and is often compared to the ImageNet moment in Computer Vision.
 
-In this example, we walk through our dataset, the training process, and finally model deployment. 
+## Data Source
 
-### What is BERT?
+<img src = '../main/Data/df_full.png' height='85%' width='85%'>
 
-First published in November 2018, BERT is a revolutionary model. First, one or more words in
-sentences are intentionally masked. BERT takes in these masked sentences as input and trains itself
-to predict the masked word. In addition, BERT uses a "next sentence prediction" task that pre-trains
-text-pair representations. BERT is a substantial breakthrough and has helped researchers and data
-engineers across industry to achieve state-of-art results in many Natural Language Processing (NLP)
-tasks. BERT offers representation of each word conditioned on its context (rest of the sentence).
-For more information about BERT, please refer to [1].
+<img src = '../main/Data/df.png' height='65%' width='65%'>
 
-### BERT fine tuning
+We will use the [SMILE Twitter](https://www.kaggle.com/ashkhagan/smile-twitter-emotion-dataset) dataset. This dataset is collected and annotated for the SMILE project. This collection of tweets mentioning 13 Twitter handles associated with British museums was gathered between May 2013 and June 2015. It was created for the purpose of classifying emotions, expressed on Twitter towards arts and cultural experiences in museums.
 
-One of the biggest challenges data scientists face for NLP projects is lack of training data; they
-often have only a few thousand pieces of human-labeled text data for their model training. However,
-modern deep learning NLP tasks require a large amount of labeled data. One way to solve this problem
-is to use transfer learning.
+It contains 3,085 tweets, with 5 emotions namely anger, disgust, happiness, surprise, sadness and the 6th label being not-relevant.
 
-Transfer learning is a machine learning method where a pre-trained model, such as a pre-trained
-ResNet model for image classification, is reused as the starting point for a different but related
-problem. By reusing parameters from pre-trained models, one can save significant amounts of training
-time and cost.
+## Exploratory Data Analysis
 
-BERT was trained on BookCorpus and English Wikipedia data, which contain 800 million words and
-2,500 million words, respectively [2]. Training BERT from scratch would be prohibitively expensive.
-By taking advantage of transfer learning, one can quickly fine tune BERT for another use case with a
-relatively small amount of training data to achieve state-of-the-art results for common NLP tasks,
-such as text classification and question answering.
+<img src = '../main/Data/class_distribution.png'>
 
-### Reference
+## Modeling
 
-[1] BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding,
-https://arxiv.org/pdf/1810.04805.pdf
+### Model Evaluation
 
-[2] Yukun Zhu, Ryan Kiros, Rich Zemel, Ruslan Salakhutdinov, Raquel Urtasun, Antonio Torralba, and
-Sanja Fidler. 2015. Aligning books and movies: Towards story-like visual explanations by watching
-movies and reading books. In Proceedings of the IEEE international conference on computer vision,
-pages 19–27.
+<img src = '../main/Data/train.png' height='65%' width='65%'>
 
-[3] Getting Started with Google BERT
-https://www.packtpub.com/product/getting-started-with-google-bert/9781838821593
+### Prediction
 
-[4] Data Science on AWS
-https://www.oreilly.com/library/view/data-science-on/9781492079385/
+<img src = '../main/Data/prediction.png' height='25%' width='25%'>
 
+## Future Work
 
-## License
+* Add additional hidden layers on top of BERT-base
+* Build a custom classifier.
+* Correct class imbalance.
 
-This library is licensed under the MIT-0 License. See the LICENSE file.
+# Preference
+Alammar, J. (2018, December 3). The illustrated bert, elmo, and co. (how nlp cracked transfer learning). The Illustrated BERT, ELMo, and co. (How NLP Cracked Transfer Learning) — Jay Alammar — Visualizing machine learning one concept at a time. Retrieved September 15, 2021, from https://jalammar.github.io/illustrated-bert/.
+
+Anastassiou, A. (n.d.). Sentiment Analysis with Deep Learning using BERT (MOOC). Coursera. https://www.coursera.org/projects/sentiment-analysis-bert.
+
+Chaffey, D. (2021, July 23). Global social media statistics research summary [updated 2021]. Smart Insights. Retrieved September 16, 2021, from https://www.smartinsights.com/social-media-marketing/social-media-strategy/new-global-social-media-research/.
+
+Devlin, J., Chang, M., Lee, K., & Toutanova, K. (2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. NAACL. https://arxiv.org/abs/1810.04805.
+
+Peters, M. E., Neumann, M., Iyyer, M., Gardner, M., Clark, C., Lee, K. & Zettlemoyer, L. (2018). Deep contextualized word representations (cite arxiv:1802.05365Comment: NAACL 2018.
+
+Taylor, W. L. (1953). “Cloze procedure”: a new tool for measuring readability. Journalism Quarterly, 30, 415–433. https://www.gwern.net/docs/psychology/writing/1953-taylor.pdf.
+
+Tran, C. (n.d.). Fine-tuning bert for sentiment analysis. Chris Tran. Retrieved September 15, 2021, from https://chriskhanhtran.github.io/_posts/2019-12-25-bert-for-sentiment-analysis/.
+
+Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł. & Polosukhin, I. (2017). Attention is all you need. Advances in Neural Information Processing Systems (p./pp. 5998–6008). https://arxiv.org/abs/1706.03762
