@@ -11,13 +11,13 @@ In this project we will build a Sentiment Classifier using BERT (Bidirectional E
 - [SMILE Twitter](https://www.kaggle.com/ashkhagan/smile-twitter-emotion-dataset) dataset.This is acollection of tweets mentioning 13 Twitter handles associated with British museums was gathered between May 2013 and June 2015. It was created for the purpose of classifying emotions, expressed on Twitter towards arts and cultural experiences in museums.
 - It contains **3,085 tweets, with 5 emotions namely anger, disgust, happiness, surprise, sadness and the 6th label being not-relevant**.
 
-<img src = '../main/Data/df_full.png' height='85%' width='85%'>
+<img src = 'https://github.com/AdiNarendra98/Papers-on-Language/blob/main/Re-Implementations/02.BERT-Pre-training%20of%20Deep%20Bidirectional%20Transformers%20for%20Language%20Understanding/Data/df_full.png' height='85%' width='85%'>
 
-<img src = '../main/Data/df.png' height='65%' width='65%'>
+<img src = 'https://github.com/AdiNarendra98/Papers-on-Language/blob/main/Re-Implementations/02.BERT-Pre-training%20of%20Deep%20Bidirectional%20Transformers%20for%20Language%20Understanding/Data/df.png' height='65%' width='65%'>
 
 ### Prediction
 
-<img src = '../main/Data/prediction.png' height='25%' width='25%'>
+<img src = 'https://github.com/AdiNarendra98/Papers-on-Language/blob/main/Re-Implementations/02.BERT-Pre-training%20of%20Deep%20Bidirectional%20Transformers%20for%20Language%20Understanding/Data/prediction.png' height='25%' width='25%'>
 
 ## Future Work
 
