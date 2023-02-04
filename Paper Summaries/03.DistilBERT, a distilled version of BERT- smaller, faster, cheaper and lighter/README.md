@@ -3,7 +3,7 @@
  
 ### [Original Paper](https://arxiv.org/pdf/1910.01108v4.pdf)
 
-- <ins>**Authors,Venue & Year**</ins>: ** Victor Sanh, Lysandre Debut, Julien Chaumond, Thomas Wolf, NeurIPS, 2019**
+- <ins>***Authors,Venue & Year***</ins>: **Victor Sanh, Lysandre Debut, Julien Chaumond, Thomas Wolf, NeurIPS, 2019**
 
 ## Summary
 
