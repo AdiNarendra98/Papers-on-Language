@@ -1,4 +1,4 @@
-# DistilBERT-SQuAD
+# DistilBERT
 
 # What is DistilBERT?
 
@@ -10,9 +10,8 @@ DistilBERT is a small, fast, cheap and light Transformer model based on Bert arc
 
 # The Stanford Question Answering Dataset (SQuAD)
 
-Stanford Question Answering Dataset (SQuAD) is a reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or span, from the corresponding reading passage, or the question might be unanswerable.
+- [**Stanford Question Answering Dataset (SQuAD)**](https://rajpurkar.github.io/SQuAD-explorer/): It is a reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or span, from the corresponding reading passage, or the question might be unanswerable.
 
-https://rajpurkar.github.io/SQuAD-explorer/
 
 # Installation
 
@@ -97,9 +96,3 @@ python run_squad.py \
   --doc_stride 128 \
   --output_dir /tmp/debug_squad/
   ```
-
-# References
-
-- <https://github.com/huggingface/transformers>
-- <https://medium.com/huggingface/distilbert-8cf3380435b5>
-- <https://arxiv.org/pdf/1910.01108.pdf>
