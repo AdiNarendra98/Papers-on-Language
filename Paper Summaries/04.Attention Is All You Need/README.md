@@ -1,17 +1,32 @@
-﻿# An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale
- 
-### [Original Paper](https://arxiv.org/abs/2010.11929)
+﻿# Attention Is All You Need
 
-- <ins>**Authors,Venue & Year**</ins>: **Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn et. , ICLR, 2021**
+ 
+### [Original Paper](https://arxiv.org/pdf/1706.03762v5.pdf)
+
+- <ins>***Authors,Venue & Year***</ins>: **Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit et. , NeurIPS, 2017**
 
 ## Summary
 
-- In vision, attention is either applied in conjunction with convolutional networks, or used to replace certain components of convolutional networks while keeping their overall structure in place.
-- This paper by Dosovitskiy et al. from Google Brain in ICLR 2021 shows that this **reliance on CNNs is not necessary and a pure transformer applied directly to sequences of image patches can perform very well on image classification tasks**.
-- Inspired by the Transformer scaling successes in NLP, we experiment with applying a standard Transformer directly to images, with the fewest possible modifications. To do so, they split an image into patches and provide the sequence of linear embeddings of these patches as an input to a Transformer. 
-- Image patches are treated the same way as tokens (words) in an NLP application. They train the model on image classification in supervised fashion (as shown in the figure below).
-- They introduce three ViT configurations (Base, Large, and Huge) in the form of two models: ViT-H/14 and ViT-L/16 (where the notation used is ViT-C/N, C is used to indicate the model size and N is the input patch size; for instance, ViT-L/16 means the “Large” variant with 16×16 input patch size).
-- When pre-trained on large amounts of data and transferred to multiple mid-sized or small image recognition benchmarks (ImageNet, CIFAR-100, VTAB, etc.), the proposed Vision Transformer (ViT) attains excellent results compared to state-of-the-art convolutional networks while requiring substantially fewer computational resources to train.
+- This work introduces Transformer, a novel sequence transduction model based entirely on attention mechanism.
+
+
+- The authors are motivated to use self-attention because of three major criteria:  
+
+   - One is that the total computational complexity per layer.
+   - Another is the amount of computation that can be parallelized, as measured by the minimum number of sequential operations required.
+   - The third is the path length between long-range dependencies in the network.
+
+- The Transformer uses two different types of attention functions:
+
+   - **Scaled Dot-Product Attention**, computes the attention function on a set of queries simultaneously, packed together into a matrix.
+
+   - **Multi-head Attention**, allows the model to jointly attend to information from different representation subspaces at different positions.
+
+
+
+-  It replaces the recurrent layers most commonly used in encoder-decoder architectures with multi-headed self-attention.. Transformer can be trained significantly faster than architectures based on recurrent or convolutional layers for translation tasks.
+
+- On both WMT 2014 English-to-German and WMT 2014 English-to-French translation tasks, the model achieves a new state of the art.  In the former task the model outperforms all previously reported ensembles.
 
 
 
