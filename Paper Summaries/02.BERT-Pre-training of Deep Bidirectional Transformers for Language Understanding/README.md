@@ -2,7 +2,7 @@
  
 ### [Original Paper](https://arxiv.org/pdf/1810.04805v2.pdf)
 
-- <ins>Authors,Venue & Year</ins>: Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova, NAACL, 2019
+- <ins>***Authors,Venue & Year***</ins>: **Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova, NAACL, 2019**
 
 ## Summary
 
