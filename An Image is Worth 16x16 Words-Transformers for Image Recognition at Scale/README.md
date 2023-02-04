@@ -6,6 +6,18 @@ This is an implementation of ViT - Vision Transformer by Google Research Team th
 ## ViT Architecture
 ![Architecture of Vision Transformer](https://github.com/AdiNarendra98/Papers-on-Language/blob/main/An%20Image%20is%20Worth%2016x16%20Words-Transformers%20for%20Image%20Recognition%20at%20Scale/ViT.png)
 
+## Results
+- Representative Examples of **Attention from output token to the Input Space**.
+<p align="center">
+<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/01.%20Landsat%20Classification%20Using%20Neural%20Network/images/ss1.png " width="800" height="400"><br>
+<b>Sample 1374 from Test Set</b><br>
+</p>
+
+<p align="center">
+<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/01.%20Landsat%20Classification%20Using%20Neural%20Network/images/ss1.png " width="800" height="400"><br>
+<b>Sample 6647 from Test Set</b><br>
+</p>
+
 ## Configs
 You can config the network by yourself through the `config.txt` file
 
