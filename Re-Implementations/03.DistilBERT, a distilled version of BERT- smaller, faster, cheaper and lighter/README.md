@@ -4,8 +4,7 @@
 
 DistilBERT is a small, fast, cheap and light Transformer model based on Bert architecture. It has 40% less parameters than bert-base-uncased, runs 60% faster while preserving 97% of BERT's performance as measured on the GLUE language understanding benchmark. DistilBERT is trained using knowledge distillation, a technique to compress a large model called the teacher into a smaller model called the student. By distillating Bert, we obtain a smaller Transformer model that bears a lot of similarities with the original BERT model while being lighter, smaller and faster to run. DistilBERT is thus an interesting option to put large-scaled trained Transformer model into production.
 
-[Transformers - Hugging Face repository](https://github.com/huggingface/transformers)
-
+- [**Transformers - Hugging Face Repo**](https://github.com/huggingface/transformers)
 
 
 # The Stanford Question Answering Dataset (SQuAD)
