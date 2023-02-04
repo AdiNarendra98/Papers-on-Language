@@ -1,6 +1,6 @@
-# Machine translation with PyTorch
+# Attention is all you Need : Machine translation 
 <p align="center">
-  <img src="https://github.com/Andrey885/Machine_translation_PyTorch/blob/master/gotta_torch.png" alt="drawing" width="300"/>
+  <img src="https://github.com/AdiNarendra98/Papers-on-Language/blob/main/Re-Implementations/04.Attention%20Is%20All%20You%20Need/gotta_torch.png" alt="drawing" width="300"/>
 </p>
 
 [![Build Status](https://github.com/Andrey885/Machine_translation_PyTorch/blob/master/.github/workflows/build-passing.svg)](https://github.com/Andrey885/Machine_translation_PyTorch/actions)
@@ -15,11 +15,14 @@ you need other languages support, thanks to SpaCy team there are
  plenty of available language models to train the exact same model on.
  Pretrained German-English model is already available after setup.
 
+<p align="center">
+  <img src="https://github.com/AdiNarendra98/Papers-on-Language/blob/main/Re-Implementations/04.Attention%20Is%20All%20You%20Need/Transformer%20Archi.png" alt="drawing" width="300"/>
+<b>Tranformer Architecture from the Paper</b> </p>
+
 
 ## Dataset
 
-Use [Multi30k](https://github.com/multi30k/dataset) translation dataset available from [PyTorch](https://torchtext.readthedocs.io/en/latest/datasets.html) - a
- small dataset from 2016 year challenge. The training is done on de-en part of it. The dataset statistics is the following:
+- [**Multi30k**](https://github.com/multi30k/dataset) translation dataset available from [PyTorch](https://torchtext.readthedocs.io/en/latest/datasets.html) - a small dataset from 2016 challenge. The training is done on de-en part of it. The dataset statistics is the following:
 
 ```
 train:
@@ -96,24 +99,3 @@ GT translation:  a skateboarder in a black t - shirt and jeans skating threw the
 Model output:  a skateboarder in a black t - shirt and jeans is riding through the city .
 ```
 
-## Source
-
-Tutorial with awesome model architectures:
-
-https://github.com/bentrevett/pytorch-seq2seq
-
-Paper with the description of attention model:
-
-https://arxiv.org/abs/1706.03762
-
-**Also useful tutorials**:
-
-Nice short book to understand NLP basics (awful for production and demo, however):
-
-https://github.com/joosthub/PyTorchNLPBook
-
-Tutorials from good PyTorch folks, also nice and simple to get started:
-
-https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html
-
-https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html
