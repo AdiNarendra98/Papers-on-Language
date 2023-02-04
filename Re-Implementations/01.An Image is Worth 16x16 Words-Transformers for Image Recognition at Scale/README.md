@@ -4,17 +4,17 @@ This is an implementation of ViT - Vision Transformer by Google Research Team th
 
 
 ## ViT Architecture
-![Architecture of Vision Transformer](https://github.com/AdiNarendra98/Papers-on-Language/blob/main/An%20Image%20is%20Worth%2016x16%20Words-Transformers%20for%20Image%20Recognition%20at%20Scale/Images/ViT.png)
+![Architecture of Vision Transformer](https://github.com/AdiNarendra98/Papers-on-Language/blob/main/Re-Implementations/01.An%20Image%20is%20Worth%2016x16%20Words-Transformers%20for%20Image%20Recognition%20at%20Scale/Images/ViT.png)
 
 ## Results
 - Representative Examples of **Attention from output token to the Input Space**.
 <p align="center">
-<img src="https://github.com/AdiNarendra98/Papers-on-Language/blob/main/An%20Image%20is%20Worth%2016x16%20Words-Transformers%20for%20Image%20Recognition%20at%20Scale/Images/lion.png " width="600" height="380"><br>
+<img src="https://github.com/AdiNarendra98/Papers-on-Language/blob/main/Re-Implementations/01.An%20Image%20is%20Worth%2016x16%20Words-Transformers%20for%20Image%20Recognition%20at%20Scale/Images/lion.png " width="600" height="380"><br>
 <b>Sample 1374 from Test Set</b><br>
 </p>
 
 <p align="center">
-<img src="https://github.com/AdiNarendra98/Papers-on-Language/blob/main/An%20Image%20is%20Worth%2016x16%20Words-Transformers%20for%20Image%20Recognition%20at%20Scale/Images/sunflower.png " width="600" height="380"><br>
+<img src="https://github.com/AdiNarendra98/Papers-on-Language/blob/main/Re-Implementations/01.An%20Image%20is%20Worth%2016x16%20Words-Transformers%20for%20Image%20Recognition%20at%20Scale/Images/sunflower.png " width="600" height="380"><br>
 <b>Sample 6647 from Test Set</b><br>
 </p>
 
