@@ -1,48 +1,17 @@
-﻿# ViT - Vision Transformer
+﻿# An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale
+ 
+### [Original Paper](https://arxiv.org/abs/2010.11929)
 
-This is an implementation of ViT - Vision Transformer by Google Research Team through the paper [**"An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale"**](https://arxiv.org/abs/2010.11929) on CIFAR-100 dataset
+- <ins>**Authors,Venue & Year**</ins>: **Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn et. , ICLR, 2021**
+
+## Summary
+
+- In vision, attention is either applied in conjunction with convolutional networks, or used to replace certain components of convolutional networks while keeping their overall structure in place.
+- This paper by Dosovitskiy et al. from Google Brain in ICLR 2021 shows that this **reliance on CNNs is not necessary and a pure transformer applied directly to sequences of image patches can perform very well on image classification tasks**.
+- Inspired by the Transformer scaling successes in NLP, we experiment with applying a standard Transformer directly to images, with the fewest possible modifications. To do so, they split an image into patches and provide the sequence of linear embeddings of these patches as an input to a Transformer. 
+- Image patches are treated the same way as tokens (words) in an NLP application. They train the model on image classification in supervised fashion (as shown in the figure below).
+- They introduce three ViT configurations (Base, Large, and Huge) in the form of two models: ViT-H/14 and ViT-L/16 (where the notation used is ViT-C/N, C is used to indicate the model size and N is the input patch size; for instance, ViT-L/16 means the “Large” variant with 16×16 input patch size).
+- When pre-trained on large amounts of data and transferred to multiple mid-sized or small image recognition benchmarks (ImageNet, CIFAR-100, VTAB, etc.), the proposed Vision Transformer (ViT) attains excellent results compared to state-of-the-art convolutional networks while requiring substantially fewer computational resources to train.
 
 
-## ViT Architecture
-![Architecture of Vision Transformer](https://github.com/AdiNarendra98/Papers-on-Language/blob/main/An%20Image%20is%20Worth%2016x16%20Words-Transformers%20for%20Image%20Recognition%20at%20Scale/ViT.png)
-
-## Results
-- Representative Examples of **Attention from output token to the Input Space**.
-<p align="center">
-<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/01.%20Landsat%20Classification%20Using%20Neural%20Network/images/ss1.png " width="800" height="400"><br>
-<b>Sample 1374 from Test Set</b><br>
-</p>
-
-<p align="center">
-<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/01.%20Landsat%20Classification%20Using%20Neural%20Network/images/ss1.png " width="800" height="400"><br>
-<b>Sample 6647 from Test Set</b><br>
-</p>
-
-## Configs
-You can config the network by yourself through the `config.txt` file
-
-```
-128     #batch_size
-500     #epoch
-0.001   #learning_rate
-0.0001  #gamma
-224     #img_size
-16 	#patch_size
-100	#num_class
-768	#d_model
-12	#n_head
-12      #n_layers
-3072    #d_mlp
-3	#channels
-0.	#dropout
-cls	#pool
-```
-
-## Training
-Currently, you can only train this model on CIFAR-100 with the following commands:
-
-`> git clone https://github.com/quanmario0311/ViT_PyTorch.git`\
-`> cd ViT_PyTorch`\
-`> pip3 install -r requirements.txt`\
-`> python3 train.py`
 
