@@ -5,7 +5,7 @@ This is an implementation of ViT - Vision Transformer by Google Research Team th
 **Please install PyTorch with CUDA support following this [link](https://pytorch.org/get-started/locally/)**
 
 ## ViT Architecture
-![Architecture of Vision Transformer](https://neurohive.io/wp-content/uploads/2020/10/rsz_cov.png)
+![Architecture of Vision Transformer](https://github.com/AdiNarendra98/Papers-on-Language/blob/main/An%20Image%20is%20Worth%2016x16%20Words-Transformers%20for%20Image%20Recognition%20at%20Scale/ViT.png)
 
 ## Configs
 You can config the network by yourself through the `config.txt` file
