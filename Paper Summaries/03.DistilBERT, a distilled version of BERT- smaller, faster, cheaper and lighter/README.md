@@ -7,8 +7,6 @@
 
 ## Summary
 
-- As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language Processing (NLP), operating these large models in on-the-edge and/or under constrained computational training or inference budgets remains challenging.
-
 - This paper by Sanh et al. from Huggingface in the Energy Efficient Machine Learning and Cognitive Computing - NeurIPS 2019 introduced a language representation model, DistilBERT which is a general-purpose pre-trained version of BERT. DistilBERT is **40% smaller, 60% faster, cheaper to pre-train, and retains 97% of the language understanding capabilities**. DistilBERT can be fine-tuned with good performances on a wide range of tasks much like its larger counterparts.
 
 - While most prior work investigated the use of distillation for building task-specific models, they leverage **knowledge distillation during the pre-training phase** and show that DistilBERT is a compelling option for edge applications.
