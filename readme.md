@@ -5,7 +5,7 @@
 - All papers follow this structure:
   * **Paper Name**
     - **Original Paper**
-    - **Code Reimplementation**: **Using PyTorch
+    - **Code Reimplementation**: Using **PyTorch**
     
 - This repo will be updated once every month.
 
